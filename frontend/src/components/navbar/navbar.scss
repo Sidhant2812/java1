@@ -2,11 +2,11 @@
 .navbar {
     width: 100%;
     color: white;
-    font-size: 14px;
+    font-size: 22px; /* Increased font size */
     position: fixed;
     top: 0;
     z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
 
     &.scrolled {
         background-color: var(--main-color);
@@ -29,7 +29,7 @@
             }
 
             span {
-                margin-right: 20px;
+                margin-right: 30px; /* Increased space between items */
                 cursor: pointer;
             }
             
@@ -78,7 +78,7 @@
                 
                 span {
                     padding: 10px;
-                    margin-right: 0px;
+                    margin-right: 30px; /* Increased space between items */
                     cursor: pointer;
                 }
 
@@ -133,7 +133,7 @@
             align-items: center;
 
             .icon {
-                margin: 0px 15px;
+                margin: 0px 25px; /* Increased space between items */
                 cursor: pointer;
             }
 

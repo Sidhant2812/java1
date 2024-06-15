@@ -6,15 +6,12 @@ import {
 	Stack
 } from "@mui/material";
 import { useState, useEffect, useRef } from "react";
-/*
- * Returns a component that displays the Corec's hours and
- * the distance from the user to the Corec.
- * */
+
 const CorecInfo = () => {
 	const [hours, setHours] = useState([]);
 
 	const request = {
-		placeId: 'ChIJc3NYhLXiEogRzh1avYzXIBc',
+		placeId: 'ChIJN6cJ18zQuDsRs3jMViVhR6I',
 		fields: ['name', 'opening_hours']
 	};
 
@@ -42,69 +39,68 @@ const CorecInfo = () => {
 				component="div"
 				disablePadding
 				sx={{
-					paddingLeft: '16px', // Add left padding
-					paddingRight: '4px', // Add left padding
-					borderBottom: '1px solid #e0e0e0', // Line between items
-					marginBottom: '8px', // Spacing between items
-					paddingBottom: '8px', // Padding at the bottom of the item
-					paddingTop: '4px', // Add left padding
+					paddingLeft: '16px',
+					paddingRight: '4px',
+					borderBottom: '1px solid #e0e0e0',
+					marginBottom: '8px',
+					paddingBottom: '8px',
+					paddingTop: '4px',
 				}}
 			>
 				<span className="smallListItem">{`${time}`}</span>
 			</ListItem>
 		)
 	}
-	/* menu box with weekly hours in it */
-	/* TODO: add another box with maps info */
-	/* TODO: add another box surrounding the two */
-	return (
-		<Box sx={{
-			width: 650,
-			height: 350,
-			bgcolor: "background.paper",
-			boxShadow: 1,
-			borderRadius: 2,
-			p: 2,
-		}}>
-			<Stack direction="row" spacing={2}>
-				<Paper style={{
-					maxWidth: 250,
-					maxHeight: 355,
-				}}
-					elevation={3}>
-					<List>
-						<ListItem
-							component="div"
-							disablePadding
-							sx={{
-								paddingLeft: '16px', // Add left padding
-								paddingRight: '4px', // Add left padding
-								borderBottom: '1px solid #e0e0e0', // Line between items
-								marginBottom: '8px', // Spacing between items
-								paddingBottom: '8px', // Padding at the bottom of the item
-								paddingTop: '4px', // Add left padding
-							}}
-						>
-							<b>Corec Hours and Directions</b>
-						</ListItem>
-						{hours.map((time) => listTimes(time))}
-					</List>
-				</Paper>
-				<Box>
-					<iframe
-						title="map"
-						width="400"
-						height="350"
-						style={{ border: 0 }}
-						loading="lazy"
-						allowfullscreen
-						src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJBwU-Qjf9EogRjnwai8-yzI4&destination=place_id:ChIJc3NYhLXiEogRzh1avYzXIBc&key=AIzaSyAX3ogg6uXEyBxm_OyGGhvv9Z6hUr6yKts"
-					>
-					</iframe>
-				</Box>
-			</Stack>
-		</Box>
-	);
+
+	// return (
+	// 	<Box sx={{
+	// 		width: 650,
+	// 		height: 350,
+	// 		bgcolor: "background.paper",
+	// 		boxShadow: 1,
+	// 		borderRadius: 2,
+	// 		p: 2,
+	// 		position: 'relative', // Ensure Box is relatively positioned for absolute children
+	// 	}}>
+	// 		<Stack direction="column" spacing={2} sx={{ height: '100%' }}>
+	// 			<Paper style={{
+	// 				maxWidth: 250,
+	// 				maxHeight: 300,
+	// 			}}
+	// 				elevation={3}>
+	// 				<List>
+	// 					<ListItem
+	// 						component="div"
+	// 						disablePadding
+	// 						sx={{
+	// 							paddingLeft: '16px',
+	// 							paddingRight: '4px',
+	// 							borderBottom: '1px solid #e0e0e0',
+	// 							marginBottom: '8px',
+	// 							paddingBottom: '8px',
+	// 							paddingTop: '4px',
+	// 						}}
+	// 					>
+	// 						<b>Corec Hours and Directions</b>
+	// 					</ListItem>
+	// 					{hours.map((time) => listTimes(time))}
+	// 				</List>
+	// 			</Paper>
+	// 			{/* <Box sx={{ position: 'absolute', bottom: 16, right: 16, width: '250px', height: '200px' }}>
+	// 				<iframe
+	// 					title="map"
+	// 					width="250"
+	// 					height="200"
+	// 					style={{ border: 0 }}
+	// 					loading="lazy"
+	// 					allowFullScreen
+	// 					src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJN6cJ18zQuDsRs3jMViVhR6I&destination=place_id:ChIJN6cJ18zQuDsRs3jMViVhR6I&key=AIzaSyAX3ogg6uXEyBxm_OyGGhvv9Z6hUr6yKts"
+	// 				>
+	// 				</iframe>
+	// 			</Box> */}
+	// 		</Stack>
+	// 	</Box>
+	// );
 }
 
 export default CorecInfo;

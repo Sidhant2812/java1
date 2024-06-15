@@ -171,23 +171,23 @@ const Menu = () => {
     const [loc, setLoc] = useState("");
 
     // dining court names
-    const WINDSOR = "Windsor";
-    const WILEY = "Wiley";
-    const FORD = "Ford";
-    const EARHART = "Earhart";
-    const HILLENBRAND = "Hillenbrand";
+    const WINDSOR = "Chings";
+    const WILEY = "Vilayti ";
+    const FORD = "Oaks";
+    const EARHART = "Presidence";
+    const HILLENBRAND = "Vintage";
 
     // addresses of each dining court
     const WINDSOR_ADDR =
-        "https://www.google.com/maps/place/Windsor+Dining+Court/@40.4270199,-86.9227636,17z/data=!3m1!4b1!4m5!3m4!1s0x8812e2b5c166c8cb:0xc6b89b5c96b567c4!8m2!3d40.4270158!4d-86.9205696";
+        "https://www.google.com/maps/place/Chings+Dining+Court/@40.4270199,-86.9227636,17z/data=!3m1!4b1!4m5!3m4!1s0x8812e2b5c166c8cb:0xc6b89b5c96b567c4!8m2!3d40.4270158!4d-86.9205696";
     const WILEY_ADDR =
-        "https://www.google.com/maps/place/Wiley+Dining+Court,+500+S+Martin+Jischke+Dr,+West+Lafayette,+IN+47906/@40.4270199,-86.9227636,17z/data=!4m5!3m4!1s0x8812e2b5a74ea24f:0x73a56c71f42b5191!8m2!3d40.4285229!4d-86.9207974";
+        "https://www.google.com/maps/place/Vilayti+Dining+Court,+500+S+Martin+Jischke+Dr,+West+Lafayette,+IN+47906/@40.4270199,-86.9227636,17z/data=!4m5!3m4!1s0x8812e2b5a74ea24f:0x73a56c71f42b5191!8m2!3d40.4285229!4d-86.9207974";
     const FORD_ADDR =
-        "https://www.google.com/maps/place/Ford+Dining+Court/@40.432113,-86.9217514,17z/data=!3m1!4b1!4m5!3m4!1s0x8812fd4b26db4177:0x2f3f9ae6b45d3924!8m2!3d40.4321076!4d-86.9193754";
+        "https://www.google.com/maps/place/Oaks+Dining+Court/@40.432113,-86.9217514,17z/data=!3m1!4b1!4m5!3m4!1s0x8812fd4b26db4177:0x2f3f9ae6b45d3924!8m2!3d40.4321076!4d-86.9193754";
     const EARHART_ADDR =
-        "https://www.google.com/maps/place/Earhart+Dining+Court/@40.432113,-86.9217514,17z/data=!4m5!3m4!1s0x8812fddb980c7891:0xbe31985e92758c5a!8m2!3d40.4256049!4d-86.9251085";
+        "https://www.google.com/maps/place/Presidence+Dining+Court/@40.432113,-86.9217514,17z/data=!4m5!3m4!1s0x8812fddb980c7891:0xbe31985e92758c5a!8m2!3d40.4256049!4d-86.9251085";
     const HILLENBRAND_ADDR =
-        "https://www.google.com/maps/place/Hillenbrand+Dining+Court/@40.4265725,-86.9290621,17z/data=!3m1!4b1!4m5!3m4!1s0x8812e2cbef5b238b:0xf6c8203c74b1aa90!8m2!3d40.4270003!4d-86.9266448";
+        "https://www.google.com/maps/place/Vintage+Dining+Court/@40.4265725,-86.9290621,17z/data=!3m1!4b1!4m5!3m4!1s0x8812e2cbef5b238b:0xf6c8203c74b1aa90!8m2!3d40.4270003!4d-86.9266448";
 
     /* handle clicking on address of dining court --> redirect to external link*/
     const handleClickLocation = () => {
