@@ -3,12 +3,6 @@ A web application for Purdue Students that seamlessly combines exercise and nutr
 
 Specialized dining court integration features are included for students @ Purdue.
 
-## Contributing
-~~If you are interested in contributing, reach out to `youngyu2002@gmail.com`.~~ This project has currently been paused. If you are interested in extending it, you will need to:
-1. Fork the repo
-2. Set up your own MongoDB Atlas database instance
-3. Fill in the required fields in the `./backend/.env` file (see [./backend/.env.example](./backend/.env.example) for the required fields).
-
 ## Workspace Setup
 To clone the repository onto your local machine, run `git clone https://github.com/youngbryanyu/titan-health-app.git` in the directory you want the repository to be cloned into.
 
